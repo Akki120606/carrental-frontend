@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  crms-frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    container_name: crms-frontend
+    restart: unless-stopped
